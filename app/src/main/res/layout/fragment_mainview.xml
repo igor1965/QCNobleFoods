@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rellayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:id="@+id/main_toolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/logoIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="145dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="149dp"
+                    android:text="Noble Foods QC"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rellayout1"
+        android:background="@drawable/halffaq">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:outlineProvider="bounds">
+
+            <Button
+                android:id="@+id/scanBtn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/button_drawable"
+                android:elevation="3dp"
+                android:outlineProvider="bounds"
+                android:stateListAnimator="@null"
+                android:text="QR Scanner"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/viewBtn"
+                android:layout_width="299dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_drawable"
+                android:elevation="3dp"
+                android:outlineProvider="bounds"
+                android:stateListAnimator="@null"
+                android:text="View all items"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="299dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_drawable"
+                android:elevation="3dp"
+                android:outlineProvider="bounds"
+                android:stateListAnimator="@null"
+                android:text="Add new items"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/checkBtn"
+                android:layout_width="299dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_drawable"
+                android:elevation="3dp"
+                android:outlineProvider="bounds"
+                android:stateListAnimator="@null"
+                android:text="Check receipt"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+  </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
